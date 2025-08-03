@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // === GitHub OAuth ===
-  document.getElementById('githubSignIn')?.addEventListener('click', async () => {
+  document.getElementById('github-login')?.addEventListener('click', async () => {
     await supabase.auth.signInWithOAuth({
       provider: 'github',
       options: {

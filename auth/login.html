@@ -16,7 +16,6 @@
 </head>
 <body>
   <div class="auth-container">
-    <form class="auth-form" id="login-form">
     <a href="/index.html" class="back-button">← Back to Home</a>
     
     <form id="login-form">
@@ -26,8 +25,10 @@
       <label for="login-password">Password</label>
       <div style="position: relative;">
         <input type="password" id="login-password" placeholder="Enter password" required />
-        <i class="fa-solid fa-eye" id="toggle-login-password"></i>
+        <i class="fa-solid fa-eye" id="toggle-login-password" 
+           style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"></i>
       </div>
+    
       
     
       <button type="submit" class="btn full-width">Log In <i class="fa-solid fa-right-to-bracket"></i></button>
